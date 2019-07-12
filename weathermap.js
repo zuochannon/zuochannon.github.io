@@ -25,7 +25,7 @@ function init() {
  }
 
 function panLondon() {
-  view.animatie({
+  view.animate({
     center: london, // "London" location
     duration: 2000
   });
