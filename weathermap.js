@@ -4,7 +4,7 @@ var initialLocation;
 var london;
 
 function init() {
-  initialLocation = ol.proj.fromLonLat([40.730610, -73.935242]);
+  initialLocation = ol.proj.fromLonLat([40.730610, -73.935242]); //coords to NY
   london = ol.proj.fromLonLat([-0.12755, 51.507222]);
 
   view: new ol.View({
