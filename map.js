@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
 
 <head>
 	<!-- OPEN LAYERS API -->
@@ -21,7 +21,7 @@
 </head>
 <body>
 
-	<p> <!-- paragraph marker added here for spacing -->
+	<p> //<!-- paragraph marker added here for spacing -->
 		<button onclick="panHome()">Pan to Home</button>
 
 		<button onclick="panLondon()">Pan to London</button>
