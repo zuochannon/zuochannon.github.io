@@ -4,12 +4,12 @@ var initialLocation;
 var london;
 
 function init() {
-  initialLocation = ol.proj.fromLonLat([37.41, 8.82]); // africa coods? [40.730610, -73.935242]coords to NY
+  initialLocation = ol.proj.fromLonLat([41.043316, 28.862457]); // [41.043316, 28.862457] africa coods? [40.730610, -73.935242]coords to NY
   london = ol.proj.fromLonLat([-0.12755, 51.507222]);
 
-  view: new ol.View({
+  view = new ol.View({
     center: initialLocation,
-    zoom: 4
+    zoom: 6
   });
 
   map = new ol.Map({
@@ -24,11 +24,22 @@ function init() {
    });
  }
 
+ function panHome() {
+   view.animate({
+     center: initialLocation,
+     duration: 2000
+   });
+ }
+
 function panLondon() {
   view.animate({
     center: london, // "London" location
     duration: 2000
   });
 }
+
+
+
+
 
 window.onload = init;
